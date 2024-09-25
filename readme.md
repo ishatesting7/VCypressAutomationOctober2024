@@ -314,3 +314,26 @@ DropDown
    <option value="Zimbabwe">Zimbabwe</option>
    <option value="Åland Islands">Åland Islands</option>
 </select>
+
+
+
+UI Elements 
+----------- 
+Radiobutton
+Checkboxes
+
+type = 'radio' - 10 Radio button - You can select only 1
+type = 'checkbox' - 10 Check box - You can select all 10 as well
+
+
+IFrames
+-------
+Download the plugin - https://www.npmjs.com/package/cypress-iframe
+
+npm install -D cypress-iframe
+
+In your cypress/support/commands.js file, add the following:
+
+import 'cypress-iframe';
+// or
+require('cypress-iframe');
