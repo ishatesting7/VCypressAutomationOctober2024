@@ -337,3 +337,17 @@ In your cypress/support/commands.js file, add the following:
 import 'cypress-iframe';
 // or
 require('cypress-iframe');
+
+
+Activities - 
+--------------
+
+1. Register the user on - https://tutorialsninja.com/demo/
+                        - https://demo.opencart.com/
+                        - https://naveenautomationlabs.com/opencart/
+
+2. Login with Same user
+
+3. Do the Guest Checkout 
+
+4. Do the Login Checkout
