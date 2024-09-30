@@ -342,11 +342,11 @@ require('cypress-iframe');
 Activities - 
 --------------
 
-1. Register the user on - https://tutorialsninja.com/demo/
+1. Register the user on - https://tutorialsninja.com/demo/  (abc/xyz)
                         - https://demo.opencart.com/
                         - https://naveenautomationlabs.com/opencart/
 
-2. Login with Same user
+2. Login with Same user - (abc/xyz)
 
 3. Do the Guest Checkout 
 
