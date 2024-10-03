@@ -29,3 +29,27 @@
 import 'cypress-iframe';
 
 require('@4tw/cypress-drag-drop')
+
+Cypress.Commands.add('loginApplication',(email, password)=>{
+
+    cy.visit('https://opensource-demo.orangehrmlive.com/auth/login');
+    cy.get('[name="username"]').type(email);
+    cy.get('[name="password"]').type(password);
+    cy.get('[type="submit"]').click();
+})
+
+Cypress.Commands.add('verifyMenuItemDemo', (menuitem)=>{
+
+    cy.log('In Custom Command');
+
+    cy.get('.oxd-main-menu-item').each(($el, index, $list)=>{
+
+        let demo = $el.text();
+        //cy.log(demo);
+        if(demo == menuitem)
+        {
+            cy.log('FOUND');
+        }  
+        
+    })
+})
