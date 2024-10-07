@@ -53,3 +53,7 @@ Cypress.Commands.add('verifyMenuItemDemo', (menuitem)=>{
         
     })
 })
+
+
+import 'cypress-file-upload';
+    
