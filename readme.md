@@ -353,4 +353,124 @@ Activities -
 4. Do the Login Checkout
 
 
+=============================================================
+
+API Testing  - Application Programming Interface
+------------------------------------------------
+
+Hotel(Guest) ---> Waiter ---> Cook
+
+Frontend ---> API ---> Backend
+
+End point - https://flightservice-web.easemytrip.com/EmtAppService//Addons/CurrencyConverter?Country=INR
+
+Request Method: GET
+
+Status Code: 200 OK
+
+Response Payload (JSON) - 
+
+{
+    "lstCurrency": [
+        {
+            "CurrencyCodeFrom": "INR",
+            "CurrencyNameFrom": "Indian Rupee",
+            "CurrencyCodeTo": "INR",
+            "CurrencyNameTo": "Indian Rupee",
+            "Amount": 1.0,
+            "FlagURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/flag_INR.png",
+            "CurrencyURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/INR_grey.png"
+        },
+        {
+            "CurrencyCodeFrom": "INR",
+            "CurrencyNameFrom": "INDIAN RUPEES",
+            "CurrencyCodeTo": "AED",
+            "CurrencyNameTo": "EMIRATI DIRHAM",
+            "Amount": 0.043202610495,
+            "FlagURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/flag_INR.png",
+            "CurrencyURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/INR_grey.png"
+        },
+        {
+            "CurrencyCodeFrom": "INR",
+            "CurrencyNameFrom": "INDIAN RUPEES",
+            "CurrencyCodeTo": "USD",
+            "CurrencyNameTo": "UNITED STATES DOLLAR",
+            "Amount": 0.011762190396,
+            "FlagURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/flag_INR.png",
+            "CurrencyURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/INR_grey.png"
+        },
+        {
+            "CurrencyCodeFrom": "INR",
+            "CurrencyNameFrom": "INDIAN RUPEES",
+            "CurrencyCodeTo": "SGD",
+            "CurrencyNameTo": "SINGAPORE DOLLAR",
+            "Amount": 0.0153766800,
+            "FlagURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/flag_INR.png",
+            "CurrencyURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/INR_grey.png"
+        },
+        {
+            "CurrencyCodeFrom": "INR",
+            "CurrencyNameFrom": "INDIAN RUPEES",
+            "CurrencyCodeTo": "THB",
+            "CurrencyNameTo": "THAI BAHT",
+            "Amount": 0.390735170199,
+            "FlagURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/flag_INR.png",
+            "CurrencyURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/INR_grey.png"
+        },
+        {
+            "CurrencyCodeFrom": "INR",
+            "CurrencyNameFrom": "INDIAN RUPEES",
+            "CurrencyCodeTo": "GBP",
+            "CurrencyNameTo": "BRITISH POUND",
+            "Amount": 0.009013949703,
+            "FlagURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/flag_INR.png",
+            "CurrencyURL": "https://flight.easemytrip.com/Content/img/curr-icon/app/INR_grey.png"
+        }
+    ]
+}
+
+
+End Point
+Payload
+Request Header
+Request Type (Method Type)
+Response Status Code
+Response Payload
+
+Common HTTP Method
+GET
+POST
+PUT
+PATCH
+DELETE
+
+Negative Scenarios of APIs
+- Change the method type
+- Change the end point
+- Change the payload content
+- Change the Header value
+- Change the Auth Value
+
+
+HTTP Status Code for Negative Testing
+-------------------------------------
+CLIENT SIDE ERRORs
+404 - Not Found
+400 - Bad Request
+401 - Unauthorized
+403 - Forbidden
+405 - Method Not Allowed
+
+SERVER SIDE ERRORs
+500 - Internal Server Error
+503 - Service not available
+
+Difference between REST and SOAP
+--------------------------------
+
+
+
+
+
+
 
