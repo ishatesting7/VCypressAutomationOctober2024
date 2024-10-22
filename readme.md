@@ -468,9 +468,82 @@ SERVER SIDE ERRORs
 Difference between REST and SOAP
 --------------------------------
 
+Framework
+---------
+Reusable
+Reliable
+Multithreaded
+Easy to Update
+Easy to Share
+
+Organized - 
+Project - Configurations, logs, pageObjects, testCases, testData, screenshot, videos, utilities, reports
+
+CUCUMBER BDD + PAGE OBJECT MODEL
+--------------------------------
+featureFile - It is a file which contains all the test cases in the form Gherkin Synax Language
+
+.feature file 
+-------------
+
+Feature: Verify the login functionality of the Application
 
 
+Background: Pre-requisite steps
+    Given user launch chrome browser
+    When user navigate to home page of application
+    Then user navigate to login screen
+    
+@smoke
+Scenario: Validate the login with valid username and password
+    And user enter the username and password
+    Then user click on login button
+    And user navigate to logged in screen
+
+@regression
+Scenario outline: Validate the login with set of username and password
+
+    And user enter the <username> and <password>
+    Then user click on login button
+    And user navigate to logged in screen
+
+Examples:
+        | username | password |
+        | abc      | xyz      |
+        | pqr      | mno      |
+        | asn      | 343      |
+        | aba      | xyz      |
+
+@sanity 
+Scenario: validate home page
+
+    Then validate the home page
+
+stepDefination - Whatever step are present inside your feature file those will be implemented in one file and that file is called stepDefination
+
+Cypress + BDD Cucumber
+----------------------
+
+Given user launch chrome browser
+When user navigate to home page of application
+Then user navigate to login screen
 
 
+@Given ('user launch chrome browser')
+{
+    cy.visit('naviagetourl')
+}
+@When ('user navigate to home page of application')
+{
+    cy.visit('naviagetourl')
+}  
+@Then ('user navigate to login screen')
+{
+    cy.visit('').
+}
+
+.js file 
+stepDefinition file
+-------------------
 
 
