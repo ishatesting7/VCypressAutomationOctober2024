@@ -547,3 +547,111 @@ stepDefinition file
 -------------------
 
 
+
+
+Swagger Tool 
+------------
+API Documentation 
+
+
+Confluence Page
+
+
+JIRA Task
+
+
+Excel 
+
+
+Postman Collection (Share)
+
+
+END POINT - https://getPatientName/lastname=C
+Method Type  - GET Call
+Response Message - 302 Result - JSON
+Response Code - 200 OK
+
+Select first_name from patients
+where first_name like "C%"
+
+Automation - API Request
+
+
+POST
+Create a new record
+END POINT - 
+METHOD TYPE - 
+Response Code - 201 Created
+
+
+
+
+
+
+
+
+
+API Framework - 
+We validate - 
+Positive TC
+1. Response Code
+2. Response Body
+3. We Apply mutliple Assertion on the JSON Response which we get
+
+Response body
+Download
+{
+  "id": 12392,
+  "petId": 12392,
+  "quantity": 1000000000,
+  "shipDate": "2024-10-23T09:57:58.800+0000",
+  "status": "placed",
+  "complete": true
+}
+
+
+
+4. We Validate Response Header
+
+
+Negative TCs for APIs
+---------------------
+
+1. Check the request body which you are passing 
+
+
+
+
+cy.js
+-----
+Will not Have the UI 
+Trigger CLI or Cypress Runner
+Query Param vs Path Param
+JSON Payload - Request and Response
+             - graphQL
+Authorization() and Authentication()
+
+
+describe('Validate Post Admin Access Token API')
+{
+    it('Validate with correct payload' )
+    {
+        assertion with 200
+    }
+
+    it('Validate with same payload)
+    {
+        assertion with 409
+    }
+
+    it('Validate with GET method payload)
+    {
+        assertion with 405
+    }
+
+    it('Missing details')
+    {
+        assertion with 400
+    }
+    
+}

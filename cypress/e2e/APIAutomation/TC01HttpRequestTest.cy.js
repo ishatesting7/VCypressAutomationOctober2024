@@ -13,9 +13,6 @@ let length = 8;
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
 
-
-
-    
     it('POST Call', ()=>{
         
         cy.request({
