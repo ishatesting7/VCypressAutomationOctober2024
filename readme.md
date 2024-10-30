@@ -619,9 +619,6 @@ Negative TCs for APIs
 
 1. Check the request body which you are passing 
 
-
-
-
 cy.js
 -----
 Will not Have the UI 
@@ -630,7 +627,6 @@ Query Param vs Path Param
 JSON Payload - Request and Response
              - graphQL
 Authorization() and Authentication()
-
 
 describe('Validate Post Admin Access Token API')
 {
@@ -653,5 +649,11 @@ describe('Validate Post Admin Access Token API')
     {
         assertion with 400
     }
-    
 }
+
+==============
+
+Step 1 - 
+
+npm i --save-dev cypress-mochawesome-reporter
+
