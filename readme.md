@@ -677,3 +677,14 @@ I will go to url -- implemented in stepdef When("I will go to url")
 
 STEP 2 
 ------
+https://bstackdemo.com/
+
+Scenario 1 - 
+1. Navigate to https://bstackdemo.com/
+2. Add some product in the cart
+3. Check the count of the product
+4. Click on Checkout
+5. Add the customer details
+6. Click on Checkout
+7. Confirm the final order as well
+    

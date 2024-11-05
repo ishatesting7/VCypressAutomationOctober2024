@@ -9,7 +9,7 @@ Feature: Login into the site with valid data
       When I click on Sign In Link
       And I entered valid credential
           | email            | validpassword |
-          | pinky1panther@gmail.com | pink123     |
+          | pinky1panther@gmail.com | @!Game149     |
       And Click on sign in button
       Then Validate user is logged in
       Then Validate the title after login
