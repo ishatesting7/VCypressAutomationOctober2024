@@ -657,3 +657,23 @@ Step 1 -
 
 npm i --save-dev cypress-mochawesome-reporter
 
+
+STEPS for CYPRESS CUCUMBER PROJECT
+----------------------------------
+STEP 1 - 
+1. To install Cucumber, run this command. 
+npm install –-save-dev cypress-cucumber-preprocessor
+
+2. .feature file - plain Gherkin Language (scenario, feature, scenario outline, background, example)
+
+3. StepDefinition - feature file - steps needs to be implemented.
+
+4. PageObject - pageAction (methods) + pageElements in form JSON
+
+I will go to the <url> -- implemented in stepdef  When("I will go to the url", String url)
+
+
+I will go to url -- implemented in stepdef When("I will go to url")
+
+STEP 2 
+------

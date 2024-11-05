@@ -1,17 +1,20 @@
 const { defineConfig } = require("cypress");
+const cucumber = require("cypress-cucumber-preprocessor").default;
 
 module.exports = defineConfig({
 
 
   watchForFileChanges:false,
-  viewportHeight:736,
-  viewportWidth:414,
+  //viewportHeight:736,
+  //viewportWidth:414,
   failOnStatusCode: false,
   reporter: 'cypress-mochawesome-reporter',
   e2e: {
+    specPattern:"**/*.feature",
     baseUrl: 'https://gorest.co.in',
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
+      on('file:preprocessor',cucumber());
       on('task', {
         log(message) {
             console.log(message + '\n');
