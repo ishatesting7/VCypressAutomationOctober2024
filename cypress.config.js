@@ -10,7 +10,7 @@ module.exports = defineConfig({
   failOnStatusCode: false,
   reporter: 'cypress-mochawesome-reporter',
   e2e: {
-    specPattern:"**/*.feature",
+    //specPattern:"**/*.feature",
     baseUrl: 'https://gorest.co.in',
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
