@@ -1,8 +1,12 @@
 const { defineConfig } = require("cypress");
 const cucumber = require("cypress-cucumber-preprocessor").default;
+const fs = require('fs');
+const path = require('path');
+const Papa = require('papaparse');
+
 
 module.exports = defineConfig({
-
+  
 
   watchForFileChanges:false,
   //viewportHeight:736,
@@ -12,9 +16,19 @@ module.exports = defineConfig({
   e2e: {
     //specPattern:"**/*.feature",
     baseUrl: 'https://gorest.co.in',
+    projectId:'utfwwf',
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
       on('file:preprocessor',cucumber());
+
+      on('task', {
+        readCsvFile(filePath) {
+          const csvPath = path.resolve(__dirname, filePath);
+          const csvFile = fs.readFileSync(csvPath, 'utf-8');
+          const parsedData = Papa.parse(csvFile, { header: true });
+          return parsedData.data; // returns parsed data as JSON
+        },
+      });
       on('task', {
         log(message) {
             console.log(message + '\n');

@@ -21,5 +21,10 @@
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.8.2",
     "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "neat-csv": "^7.0.0",
+    "papaparse": "^5.4.1",
+    "xlsx": "^0.18.5"
   }
 }

@@ -688,3 +688,11 @@ Scenario 1 -
 6. Click on Checkout
 7. Confirm the final order as well
     
+CSV Reading
+-----------
+
+Step 1 - npm install papaparse
+
+Step 2 - Create a task inside your cypress.config.js file
+
+Step 3 - 
