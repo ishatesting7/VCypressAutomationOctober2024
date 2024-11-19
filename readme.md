@@ -690,9 +690,11 @@ Scenario 1 -
     
 CSV Reading
 -----------
-
+(PAPAPARSE)
 Step 1 - npm install papaparse
 
 Step 2 - Create a task inside your cypress.config.js file
 
-Step 3 - 
+
+For Excel
+(XLSX) - https://www.npmjs.com/package/xlsx
